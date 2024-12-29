@@ -5,9 +5,11 @@
 
 2. mkdir ssl
 3. cd ssl
-4. openssl req -x509 -nodes -days 365 -newkey rsa:2048 \ 
--keyout mistletoe.key -out mistletoe.crt \ 
+4.
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+-keyout mistletoe.key -out mistletoe.crt \
 -subj "/C=US/ST=State/L=City/O=Organization/OU=IT/CN=mistletoe"
+
 5. cd -
 6. docker compose up
 7. Check your ip address, there you can find wordpress:
